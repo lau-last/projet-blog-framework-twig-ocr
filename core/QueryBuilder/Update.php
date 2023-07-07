@@ -36,7 +36,7 @@ final class Update
      */
     public function __toString(): string
     {
-        return 'UPDATE ' . $this->table . ' SET ' . $this->set . ($this->where !== [] ? ' WHERE ' . \implode(' AND ', $this->where) : '');
+        return 'UPDATE '.$this->table.' SET '.$this->set.($this->where !== [] ? ' WHERE '.\implode(' AND ', $this->where) : '');
 
     }
 

@@ -48,10 +48,10 @@ final class Select
      */
     public function __toString(): string
     {
-        return 'SELECT ' . \implode(', ', $this->value) . ' FROM ' . $this->table
-            . (!empty($this->join) ? ' INNER JOIN ' . \implode($this->join) : '')
-            . ($this->where !== [] ? ' WHERE ' . \implode(' AND ', $this->where) : '')
-            . ($this->orderBy !== null ? ' ORDER BY ' . $this->orderBy : '');
+        return 'SELECT '.\implode(', ', $this->value).' FROM '.$this->table
+            .(!empty($this->join) ? ' INNER JOIN '.\implode($this->join) : '')
+            .($this->where !== [] ? ' WHERE '.\implode(' AND ', $this->where) : '')
+            .($this->orderBy !== null ? ' ORDER BY '.$this->orderBy : '');
 
     }
 

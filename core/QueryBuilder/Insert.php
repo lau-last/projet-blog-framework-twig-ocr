@@ -33,7 +33,7 @@ final class Insert
      */
     public function __toString(): string
     {
-        return 'INSERT INTO ' . $this->table . ' (' . \implode(', ', $this->value) . ') VALUES (:' . \implode(', :', $this->value) . ')';
+        return 'INSERT INTO '.$this->table.' ('.\implode(', ', $this->value).') VALUES (:'.\implode(', :', $this->value).')';
 
     }
 
